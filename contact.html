@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jameson | Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href="css/small-business.css" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+	
+
+</head>
+
+<body style="background-image: url(img/grid3.jpg); background-repeat: repeat;">
+       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand logo-nav" href="../../Desktop/index.html" style="padding-top: 10px;">
+                    <img src="img/LOGO.png" style="height: 70px;" >
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../../Desktop/index.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><i class="fa fa-cog"></i> About</a>
+                    </li>
+                    <li >
+                        <a href="work.html"><i class="fa fa-briefcase"></i> Services</a> 
+                    </li>
+                    <li class="active">
+                        <a href="contact.html"><i class="fa fa-user"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>    <div class="section-header">
+  		<div class="container">
+    		<div class="row">
+      			<div class="col-md-12">
+	    			<!-- Remove the .animated class if you don't want things to move -->
+					<h1 class="animated slideInLeft"><span>Contact Us</span></h1>
+	  			</div>
+			</div>
+  		</div>
+    </div>
+	<div class="container">
+		<div class="row">
+	    	<!-- Contact us form -->
+				<div class="col-sm-6 col-md-8">
+					<h2 class="hl top-zero" style="font-weight: 400;">Request a Quote <small class="muted">We'd love to hear from you.</small></h2>
+					<hr>
+				</div>
+			  	<div class="col-sm-6 col-md-4" style="padding-top:25px;">
+					<h4 class="hl top-zero">Our Address</h4>
+			  		<hr>
+			  	</div>
+		  </div>
+
+		  <div class="row" style="">
+		  	<div class="col-sm-6 col-md-4" style="">	
+
+			<!--<form role="form">
+				<div class="form-group">
+					<label for="email">Your email address</label>
+					<input type="email" class="form-control" id="email" placeholder="Enter email">
+			  	</div>
+				<div class="form-group">
+					<label for="first_name">Your name</label>
+					<input type="text" class="form-control" id="name" placeholder="Enter name">
+			  	</div>
+			  	<div class="form-group">
+					<label for="message">Your message</label>
+					<textarea class="form-control" rows="3" id="message" placeholder="Enter message"></textarea>
+			  	</div>
+			  	<div class="form-group">
+					<label for="exampleInputFile">Upload file</label>
+					<input type="file" id="exampleInputFile">
+					<p class="help-block">Attach your file here.</p>
+			  	</div>
+			  	<div class="checkbox">
+					<label>
+				  		<input type="checkbox"> Send a copy to myself
+					</label>
+			  	</div>
+			  	<button type="submit" class="hl-btn hl-btn-green">Send request</button>
+			</form>
+			</div>-->
+
+				<!-- contact us form -->
+				<form name="contactform" method="post" action="send_form_email.php" >
+					<fieldset>
+						<div class="form-group">
+							<label for="first_name">First Name</label>
+							<input type="text" class="form-control" id="name" name="first_name" placeholder="Enter first name" required>
+						</div>
+				  		<div class="form-group">
+								<label for="Last_name">Last Name</label>
+								<input type="text" class="form-control" id="name" name="last_name" placeholder="Enter last name" required>
+				  		</div>
+				  		<div class="form-group">
+								<label for="email">Your email address</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+				  		</div>
+			  
+			  
+				  		<div class="form-group">
+							<label for="telephone">Your Phone Number</label>
+							<input type="text" class="form-control" id="telephone" name="telephone" placeholder="xxx-xxx-xxxx" >
+			  			</div>
+					  	<div class="form-group">
+							<label for="comments">Your message</label>
+							<textarea class="form-control" rows="3" id="message" name="comments" placeholder="Enter message" required></textarea>
+					  	</div>
+						<!--<input type="hidden" value="$previous" />
+						<div class="control-group">
+							<label class="control-label" for="first_name">First Name</label>
+							<div class="controls">
+								<input  tabindex="1" type="text" name="first_name" maxlength="50" size="30" placeholder="First Name" required>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="last_name">Last Name</label>
+							<div class="controls">
+								<input  tabindex="2" type="text" name="last_name" maxlength="50" size="30" placeholder="Last Name" required >
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="email">Email Address </label>
+							<div class="controls">
+								<input  tabindex="3" type="email" name="email" maxlength="80" size="30" placeholder="username@provider.com" required>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" type="text" for="telephone">Phone Number</label>
+							<div class="controls">
+								<input  tabindex="4" type="text" name="telephone" maxlength="30" size="30" placeholder="xxx-xxx-xxxx">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="comments">Message</label>
+							<div class="controls">
+								<textarea  tabindex="5" name="comments" maxlength="1000" class="input-xlarge" rows="10" cols="50" required></textarea> 
+							</div>
+						</div>-->
+					</fieldset>                          
+					<div class="controls" style="margin-bottom: 10px">
+						<button input type="submit" value="Submit" class="btn btn-primary">Submit</button>  
+					</div>
+				</form><!-- end of form -->
+			</div><!-- end of span6 -->
+		  <!-- google map -->
+			<div class="col-md-4 col-sm-0"></div>
+			<div class="col-sm-6 col-md-4">
+					  		<p>
+					Durham Region &amp; Simcoe<br />
+					<!--1987 Lincoln Street<br />-->
+					Phone: +0 000 000 00 00<br />
+					Email: <a href="#">admin@mysite.com</a>
+		  		</p>
+		  	
+				<div class="map">	
+					<iframe width="350" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=pickering&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=Pickering,+Durham+Regional+Municipality,+Ontario&amp;t=m&amp;ll=43.838365,-79.0868&amp;spn=0.061909,0.086002&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe>			
+				</div> <!-- end of google map-->
+			</div>
+		</div>
+	</div><!-- end of container -->
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <p>Jameson Pro Builder Inc</p>
+                    <p>Pickering, Ontario Canada</p>
+                    <p>P:  (705)-790-9033</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h3>Go Social</h3>
+                    <hr>
+                    <p>Stay in touch with us:</p>
+                    <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/JamesonProBuildersInc"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                        <li><a href="http://ca.linkedin.com/pub/james-ward/58/83a/a3a/"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+                        <li><a href=" http://www.pinterest.com/jamesonpro/"><i class="fa fa-pinterest-square fa-3x"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h3>We Now Accept</h3>
+                    <hr>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style = "background-color:#23232a; color: white; height: 65px; padding-top: 10px;">
+        <div class="container">
+            <p>Copyright &copy; Company 2013</p>
+        </div>
+    </div>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>

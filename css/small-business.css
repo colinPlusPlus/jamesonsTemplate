@@ -1,0 +1,336 @@
+body, html{
+	height: 100%;
+}
+body {
+	padding-top: 75px; /* adjust this if the height of the menu bar changes */
+	/* background-image:url(../img/Back-slice2.png); */
+	/* background-image: url(../img/grid.png); */
+	background-repeat: repeat;
+	background-color: #eee;
+	color: white;
+	/* background-color: rgb(6, 3, 38); */
+}
+h1, h2, p{
+	font-family: 'Lato', sans-serif;
+}
+
+h1.hl, h2.hl, h3.hl, h4.hl, h5.hl, h6.hl {
+	/* color: #fff; */
+	color: black;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.nav {
+	margin-top: 28px; /* this is a faux center fix for the nav options - adjust this if you wish to change the logo height or the font of the menu items */
+}
+p{
+	font-size: 18px;
+	font-weight: 300;
+}
+p.lead{
+	font-size: 24px;
+	font-weight: 300;
+}
+p.about{
+	font-weight: 300;
+}
+
+footer {
+	padding: 10px 0;
+	background-color: #222;	
+	color: white;
+	/*margin-top: 10px;*/
+	
+}
+
+#myCarousel img{
+	width: 100%;
+	height: 350px;
+}
+
+.carousel-caption{
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	position: absolute;
+	background-image: none;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0, 0, 0, 0.75);
+	text-align: left;
+}
+
+.carousel-indicators {
+	/*bottom: 0px;*/
+}
+
+.thumb{
+	width: 75px;
+	height: 60px;
+	margin-bottom:  4px;  
+	/* margin-right: -4px; */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #222;	
+  color: white;
+  background-color: rgba(6,3,38,0.8);
+}
+
+
+/********** ---MASK--- **************/
+#wrap{
+	background:url(../img/Construction.jpg);
+	background-size: cover; 
+	height: 565px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale')";
+	/* background-position: center; */
+	/*border-bottom: 1px solid #eee;*/
+	color: #fff;
+	-webkit-box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+	box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+	width: 100%
+	
+}
+#wrap h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 48px;
+	margin-top: 70px;
+	text-transform: uppercase;
+	margin-left: 70px;
+	
+}
+
+#about-bg{
+	background-image: url(../img/house-construction-blur.jpg);
+	background-size: cover;
+	background-position: center;
+	/*border-bottom: 1px solid #eee;*/
+	color: #fff;
+	
+}
+.grad-about {
+   
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.1)));
+   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1)); 
+   background-image:    -moz-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+   background-image:     -ms-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+   background-image:      -o-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+   
+}
+
+.about-p{
+	/* background-color: rgba(0,0,0,0.5); */
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.3)));
+   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.3)); 
+   background-image:    -moz-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+   background-image:     -ms-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+   background-image:      -o-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+	padding: 10px;
+}
+
+#work-bg{
+	/* background-image: url(http://buildexpo.files.wordpress.com/2013/09/new-build-under-construction-site-inspection.jpg); */
+	background-image: url(../img/BuildSite.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	
+}
+.grad-work {
+   
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.1)));
+   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1)); 
+   background-image:    -moz-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+   background-image:     -ms-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+   background-image:      -o-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+
+}
+
+.work-p{
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0.6)), to(rgba(255,255,255,0.1)));
+   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6), rgba(255,255,255,0.1)); 
+   background-image:    -moz-linear-gradient(top, rgba(0,0,0,0.6), rgba(255,255,255,0.1));
+   background-image:     -ms-linear-gradient(top, rgba(0,0,0,0.6), rgba(255,255,255,0.1));
+   background-image:      -o-linear-gradient(top, rgba(0,0,0,0.6), rgba(255,255,255,0.1));
+	padding: 10px 8px 10px 20px;
+}
+
+.grad-bg {
+   
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.1)));
+   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1)); 
+   background-image:    -moz-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+   background-image:     -ms-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+   background-image:      -o-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+   height: 100%;
+}
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+	background-color: #ff831d;
+}
+
+.map {
+	overflow: hidden;
+}
+
+
+/*Animation*/
+.list {
+	margin: 50px 0 50px 50px;
+}
+.list ul {
+	padding: 0;
+}
+.list i {
+	font-size: 28px;
+}
+.list li {
+	list-style-type: none;
+	margin: 10px 0;
+}
+.list span.li-bg {
+	background: rgba(0, 0, 0, 0.25);
+	padding: 5px 10px;
+}
+.list span {
+	font-size: 28px;
+	margin-left: 20px;
+	font-weight: 100;
+}
+.first {
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+}
+.second {
+	-webkit-animation-duration: 1.3s;
+	-moz-animation-duration: 1.3s;
+}
+.third {
+	-webkit-animation-duration: 1.6s;
+	-moz-animation-duration: 1.6s;
+}
+.fourth {
+	-webkit-animation-duration: 1.9s;
+	-moz-animation-duration: 1.9s;
+}
+.section-header {
+	background: #B8BAB6;
+	border-bottom: 1px solid #060326;
+	padding: 15px 0;
+	margin-bottom: 50px;
+}
+.section-header h1 {
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+.section-header h1 span {
+	border-bottom: 5px solid #060326;
+	padding-bottom: 10px;
+}
+  
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+#footer {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+@media (max-width: 992px) { /* Adjusting for small devices */
+
+	/* Index page background */
+	
+	#wrap h1 {
+		text-shadow: 1px 1px 3px #666;
+		filter: Shadow(Color=#666666, Direction=45, Strength=3);
+	}
+}
+@media (max-width: 768px) { /* Adjusting for mobile */
+
+	/* Index page background */
+	
+	#wrap h1 {
+		font-size: 32px;
+		margin: 70px 0 0 0;
+		text-align: center;
+		font-weight: 300;
+		text-shadow: 1px 1px 3px #666;
+		filter: Shadow(Color=#666666, Direction=45, Strength=3);
+	}
+	.list {
+		margin: 50px 0;
+	}
+	.list i {
+		font-size: 24px;
+	}
+	.list li {
+		margin: 20px 0;
+	}
+	.list span {
+		font-size: 20px;
+		font-weight: 100;
+	}
+	#wrap{
+	height: 100%
+}
+	
+}
+@media all and (min-width:768px)
+
+{
+
+.featurette-heading {
+	font-size: 50px;
+}
+}
+@media (min-width:992px)
+{
+.featurette-heading {
+	margin-top: 0px;
+
+}
+
+}
+.orange-back{
+	background-color:#ff831d; 
+	color: white;
+}
+.newsText{padding:20px 20px 25px 20px; /*margin-bottom: 22px;*/}
+.newsText h3{margin-bottom: 8px;}
+/*.newsText p{font-size:12px; font-weight:400;} */
+
+
+
