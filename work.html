@@ -24,7 +24,7 @@
 </head>
 
 <body>
-	<div id="work-bg"><!-- back ground image -->
+	<div id="work-bg" style="background-attachment: fixed; position: relative;"><!-- back ground image -->
 		<div class="grad-work">    
 		    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="">
 		        <div class="container">
@@ -36,7 +36,7 @@
 		                    <span class="icon-bar"></span>
 		                </button>
 		                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-		                <a class="navbar-brand logo-nav" href="../../Desktop/index.html" style="padding-top: 10px;">
+		                <a class="navbar-brand logo-nav" href="index.html" style="padding-top: 10px;">
 		                    <img src="img/LOGO.png" style="height: 70px;" >
 		                </a>
 		            </div>
@@ -45,7 +45,7 @@
 		            <div class="collapse navbar-collapse navbar-ex1-collapse">
 		                <ul class="nav navbar-nav navbar-right">
 		                    <li>
-		                        <a href="../../Desktop/index.html"><i class="fa fa-home"></i> Home</a>
+		                        <a href="index.html"><i class="fa fa-home"></i> Home</a>
 		                    </li>
 		                    <li>
 		                        <a href="about.html"><i class="fa fa-cog"></i> About</a>
@@ -217,31 +217,45 @@
 	                    <a class="play-pause"></a>
 	                    <ol class="indicator"></ol>
 	                </div>
-                
-		            <div class="col-md-4 col-sm-12">
-		                <h1 class="hl top-zero" style="color:white; margin-top:-5px;">Our Services</h1>
-		                <hr>
+                    <div class="col-md-4 col-sm-12">
+                        <h1 class="hl top-zero" style="color:white; margin-top:-5px;">Our Services</h1>
+                        <hr>
+                    </div>
+		            <div class="col-md-2 col-sm-6">
 		                <ul>
 		                    <li>Custom Builds</li>
 		                    <li>Wood Framing</li>
-		                    <li>Wood finishing</li>
-		                    <li>Interior &amp; exterior</li>
+		                    <li>Wood Finishing</li>
+		                    <li>Interior &amp; Exterior</li>
 		                    <ul><li>Woodworking, Composites</li></ul>
-		                    <li> Cabinetry &amp; mill work</li>
+		                    <li> Cabinetry &amp; Mill Work</li>
 		                    <li>Windows &amp; Doors</li>
-		                    <li>Doors and hardware</li>
+		                    <li>Doors and Hardware</li>
 		                    <li>Commercial/ Industrial</li>
 		                    <li>Exteriors</li>
 		                    <ul><li>Siding, EIFS, Railings</li></ul>
 		                    <li>Interiors</li>
 		                    <li>Additions</li>
-		                    <li>Cedar &amp; fiberglass roofing</li>
-		                    <li>Landscapes</li>
+		                    <li>Cedar &amp; Fiberglass Roofing</li>
+		                </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <ul>
+                            <li>Landscapes</li>
 		                    <li>Hardscapes</li>
-		                    <li>Interlocking &amp; stonework</li>
-		                    <li>Timer frame</li>
+		                    <li>Interlocking &amp; Stonework</li>
+		                    <li>Timber Frame</li>
 		                    <li>Acoustics</li>
-		                </ul>    
+                            <li>Architectural Woodwork</li>
+                            <li>Heritage Builds</li>
+                            <li>Restorations</li>
+                            <li>Decks &amp; Fencing</li>
+                            <li>Furniture</li>
+                            <ul><li>Harvest Tables</li></ul>
+                            <li>Docks</li>
+                            <li>Cottages &amp; Cabins</li>
+                            <li>General maintenance</li>
+                        </ul>
 					</div>
 				</div>
 			</div> 
@@ -253,9 +267,13 @@
                 <div class="col-md-4 col-sm-4">
                     <h3>Contact Us</h3>
                     <hr>
-                    <p>Jameson Pro Builder Inc</p>
+                    <!--<p>Jameson Pro Builder Inc</p>-->
+                    <!--<div class="col-sm-8" style="border-bottom: dotted;"></div><br>-->
                     <p>Pickering, Ontario Canada</p>
-                    <p>P:  (705)-790-9033</p>
+                    <p>P: (905)999-5457</p>
+                    <div class="col-sm-8" style="border-bottom: dotted;"></div><br>
+                    <p>Barrie, Ontario Canada</p>
+                    <p>P:  (705)790-9033</p>
                 </div>
                 <div class="col-md-4 col-sm-4">
                     <h3>Go Social</h3>
@@ -280,8 +298,6 @@
                 <p>Copyright &copy; Company 2013</p>
             </div>
         </div>
-
-    
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/blueimp-gallery.min.js"></script>
@@ -294,7 +310,6 @@
         options = {index: link, event: event},
         links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);
-};
-    
+        };
     </script>
 </body>

@@ -277,11 +277,24 @@
         $(document).ready(function() {
     
           $('#myCarousel').carousel({
-            interval: 4000;
-            })
+            interval: 4000
+            });
           
-          $(window).stellar();
+//          $(window).stellar();
+
+          $('.container').each(function(){
+              var highestBox = 0;
+
+              $(this).find('.orange-back').each(function(){
+                  if($(this).height() > highestBox){
+                      highestBox = $(this).height();
+                  }
+              })
+
+              $(this).find('.orange-back').height(highestBox);
           });
+
+        });
     </script>
 
 </body>
