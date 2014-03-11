@@ -21,7 +21,7 @@
 
 </head>
 
-<body style="background-image: url(img/grid3.jpg); background-repeat: repeat;">
+<body id ="contact-bg" style="background-attachment: fixed; position: relative;">
        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="../../Desktop/index.html"><i class="fa fa-home"></i> Home</a>
+                        <a href="index.html"><i class="fa fa-home"></i> Home</a>
                     </li>
                     <li>
                         <a href="about.html"><i class="fa fa-cog"></i> About</a>
@@ -69,19 +69,20 @@
     </div>
 	<div class="container">
 		<div class="row">
-	    	<!-- Contact us form -->
-				<div class="col-sm-6 col-md-8">
+
+	    		<!-- Contact us form -->
+				<div class="col-sm-6 col-md-4 col-md-push-8" style="background-color: #eeeeee">
 					<h2 class="hl top-zero" style="font-weight: 400;">Request a Quote <small class="muted">We'd love to hear from you.</small></h2>
 					<hr>
 				</div>
-			  	<div class="col-sm-6 col-md-4" style="padding-top:25px;">
-					<h4 class="hl top-zero">Our Address</h4>
-			  		<hr>
-			  	</div>
-		  </div>
+			  	<!--<div class="col-sm-6 col-md-4" style="padding-top:25px;">-->
+					<!--<h4 class="hl top-zero">Our Address</h4>-->
+			  		<!--<hr>-->
+			  	<!--</div>-->
+		</div>
 
-		  <div class="row" style="">
-		  	<div class="col-sm-6 col-md-4" style="">	
+		  <div class="row">
+		  	<div class="col-sm-6 col-md-4 col-md-push-8" style="background-color: #eeeeee; color: #333333;">
 
 			<!--<form role="form">
 				<div class="form-group">
@@ -113,27 +114,26 @@
 				<!-- contact us form -->
 				<form name="contactform" method="post" action="send_form_email.php" >
 					<fieldset>
-						<div class="form-group">
-							<label for="first_name">First Name</label>
-							<input type="text" class="form-control" id="name" name="first_name" placeholder="Enter first name" required>
-						</div>
-				  		<div class="form-group">
-								<label for="Last_name">Last Name</label>
-								<input type="text" class="form-control" id="name" name="last_name" placeholder="Enter last name" required>
-				  		</div>
-				  		<div class="form-group">
-								<label for="email">Your email address</label>
-								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
-				  		</div>
-			  
-			  
-				  		<div class="form-group">
-							<label for="telephone">Your Phone Number</label>
+						<div class="form-group input-group">
+							<!--<label for="first_name">First Name</label>-->
+							<input type="text" class="form-control" id="name" name="first_name" placeholder="First Name" required>
+                            <span class="input-group-addon"><i class="fa fa-user"></i> </span>
+                        </div>
+				  		<div class="form-group input-group">
+						    <input type="text" class="form-control" id="name" name="last_name" placeholder="Last Name" required>
+                            <span class="input-group-addon"><i class="fa fa-group"></i> </span>
+                        </div>
+				  		<div class="form-group input-group">
+						    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i> </span>
+                        </div>
+			 	  		<div class="form-group input-group">
 							<input type="text" class="form-control" id="telephone" name="telephone" placeholder="xxx-xxx-xxxx" >
-			  			</div>
+                            <span class="input-group-addon"><i class="fa fa-phone"></i> </span>
+                        </div>
 					  	<div class="form-group">
 							<label for="comments">Your message</label>
-							<textarea class="form-control" rows="3" id="message" name="comments" placeholder="Enter message" required></textarea>
+							<textarea class="form-control" rows="7" id="message" name="comments" placeholder="Enter message" required></textarea>
 					  	</div>
 						<!--<input type="hidden" value="$previous" />
 						<div class="control-group">
@@ -168,24 +168,25 @@
 						</div>-->
 					</fieldset>                          
 					<div class="controls" style="margin-bottom: 10px">
-						<button input type="submit" value="Submit" class="btn btn-primary">Submit</button>  
+                        <button type="submit" value="Submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+						<!--<button input  class="btn btn-primary">Submit</button>-->
 					</div>
 				</form><!-- end of form -->
 			</div><!-- end of span6 -->
 		  <!-- google map -->
-			<div class="col-md-4 col-sm-0"></div>
-			<div class="col-sm-6 col-md-4">
-					  		<p>
-					Durham Region &amp; Simcoe<br />
-					<!--1987 Lincoln Street<br />-->
-					Phone: +0 000 000 00 00<br />
-					Email: <a href="#">admin@mysite.com</a>
-		  		</p>
-		  	
-				<div class="map">	
-					<iframe width="350" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=pickering&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=Pickering,+Durham+Regional+Municipality,+Ontario&amp;t=m&amp;ll=43.838365,-79.0868&amp;spn=0.061909,0.086002&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe>			
-				</div> <!-- end of google map-->
-			</div>
+			<!--<div class="col-md-4 col-sm-0"></div>-->
+			<!--<div class="col-sm-6 col-md-4">-->
+					  		<!--<p>-->
+					<!--Durham Region &amp; Simcoe<br />-->
+					<!--&lt;!&ndash;1987 Lincoln Street<br />&ndash;&gt;-->
+					<!--Phone: +0 000 000 00 00<br />-->
+					<!--Email: <a href="#">admin@mysite.com</a>-->
+		  		<!--</p>-->
+		  	<!---->
+				<!--<div class="map">	-->
+					<!--<iframe width="350" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=pickering&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=Pickering,+Durham+Regional+Municipality,+Ontario&amp;t=m&amp;ll=43.838365,-79.0868&amp;spn=0.061909,0.086002&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe>			-->
+				<!--</div> &lt;!&ndash; end of google map&ndash;&gt;-->
+			<!--</div>-->
 		</div>
 	</div><!-- end of container -->
 	<footer>
